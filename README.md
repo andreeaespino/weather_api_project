@@ -76,7 +76,7 @@ api_project/
 ### 1. Clone the repo
 
 ```bash
-git clone TODO-your-repo-url
+git clone https://github.com/andreeaespino/api_project.git
 cd api_project
 ```
 
