@@ -1,4 +1,3 @@
-// server.js
 require('dotenv').config();
 const express = require('express');
 const axios = require('axios');
@@ -107,7 +106,7 @@ const normalizeCurrent = (d) => ({
 });
 
 // The free /forecast endpoint returns 3-hour steps for 5 days.
-// Group them by day and summarise.
+// Group by day and summarise.
 const normalizeForecast = (d) => {
   const days = {};
 
@@ -121,7 +120,7 @@ const normalizeForecast = (d) => {
     .slice(0, 5)
     .map(([date, items]) => {
       const temps = items.map((i) => i.main.temp);
-      // Use the entry closest to midday to represent the day's conditions
+      // Entry closest to midday to represent the day's conditions
       const midday =
         items.find((i) => i.dt_txt.includes('12:00:00')) || items[Math.floor(items.length / 2)];
 
