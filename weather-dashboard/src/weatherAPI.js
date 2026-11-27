@@ -1,4 +1,3 @@
-// src/weatherAPI.js
 export default class WeatherAPI {
   // Relative URL: Vite's dev proxy forwards /api to http://localhost:3001
   constructor(baseURL = '/api/v1') {

@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState, useEffect } from 'react';
 import {
   Search, MapPin, Wind, Droplets, Eye, Gauge,
